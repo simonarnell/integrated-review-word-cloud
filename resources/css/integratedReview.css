@@ -1,0 +1,19 @@
+body {
+    background-color: #ccc;
+}
+
+.red {
+ fill: #c8102e
+}
+
+.white {
+  fill: #fff
+}
+
+.blue {
+    fill: #012169
+}
+
+text {
+    text-anchor: middle
+}
