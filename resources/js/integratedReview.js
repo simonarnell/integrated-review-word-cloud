@@ -1,5 +1,13 @@
-document.addEventListener("DOMContentLoaded", async function() {
-    const pdf = await pdfjsLib.getDocument('https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/969402/The_Integrated_Review_of_Security__Defence__Development_and_Foreign_Policy.pdf').promise
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('docs').addEventListener("change", drawWordCloud);
+    drawWordCloud()
+})
+
+async function drawWordCloud() {
+    d3.select("svg").remove()
+    const docSelection = document.getElementById('docs')
+    const url = docSelection.options[docSelection.selectedIndex].dataset.url
+    const pdf = await pdfjsLib.getDocument(url).promise
     let texts = []
     for (let i = 1; i<= pdf.numPages; i++) {
         let page = await pdf.getPage(i)
@@ -50,4 +58,4 @@ document.addEventListener("DOMContentLoaded", async function() {
             .text(d => d.text);
         })
         .start();     
-})
+}
