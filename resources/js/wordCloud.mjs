@@ -59,22 +59,22 @@ async function draw() {
         .font('Helvetica')
         .fontSize(d => Math.sqrt(d.value))
     layout.on('end', function() {
-            d3.select('svg')
-                .attr('width', layout.size()[0])
-                .attr('height', layout.size()[1])
-                .append('g')
-                .attr('transform', `translate(${layout.size()[0] / 2}, ${layout.size()[1] / 2})`)
-                .selectAll('text')
-                .data(dataModel)
-                .enter().append('text')
-                .style('font-size', d => `${d.size}px`)
-                .style('font-family', layout.font())
-                .attr('class', () => { 
-                    const colours = ['red', 'white', 'blue']
-                    return colours[Math.floor(Math.random() * colours.length)]
-                })
-                .attr('transform', d => `translate(${[d.x, d.y]})rotate(${d.rotate})`)
-                .text(d => d.text);
+        d3.select('svg')
+            .attr('width', layout.size()[0])
+            .attr('height', layout.size()[1])
+            .append('g')
+            .attr('transform', `translate(${layout.size()[0] / 2}, ${layout.size()[1] / 2})`)
+            .selectAll('text')
+            .data(dataModel)
+            .enter().append('text')
+            .style('font-size', d => `${d.size}px`)
+            .style('font-family', layout.font())
+            .attr('class', () => { 
+                const colours = ['red', 'white', 'blue']
+                return colours[Math.floor(Math.random() * colours.length)]
+            })
+            .attr('transform', d => `translate(${[d.x, d.y]})rotate(${d.rotate})`)
+            .text(d => d.text);
     })
     .start();
 }
