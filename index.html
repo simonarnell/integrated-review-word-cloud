@@ -4,20 +4,12 @@
         <script src="https://npmcdn.com/pdfjs-dist/build/pdf.js"></script>
         <script src="https://d3js.org/d3.v6.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>
-        <script src="resources/js/wordCloud.js"></script>
+        <script type="module" src="resources/js/wordCloud.mjs"></script>
     </head>
     <body>
         <div>
-            <select id="docs">
-                <option value="integratedReview2021"
-                    data-url="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/969402/The_Integrated_Review_of_Security__Defence__Development_and_Foreign_Policy.pdf">
-                    Integrated Review 2021
-                </option>
-                <option selected value="nationalCyberStrategy2022"
-                    data-url="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1040805/National_Cyber_Strategy_-_FINAL_VERSION.pdf">
-                    National Cyber Strategy 2022
-                </option>
-            </select>
+            <select id="docs"></select>
         </div>
+        <svg></svg>
     </body>
 </html>

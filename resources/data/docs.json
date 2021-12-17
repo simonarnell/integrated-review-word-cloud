@@ -1,0 +1,13 @@
+[
+    {
+        "id": "integratedReview2021",
+        "name": "Integrated Review 2021",
+        "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/969402/The_Integrated_Review_of_Security__Defence__Development_and_Foreign_Policy.pdf"
+    },
+    {
+        "id": "nationalCyberStrategy2022",
+        "name": "National Cyber Strategy 2022",
+        "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1040805/National_Cyber_Strategy_-_FINAL_VERSION.pdf",
+        "defaultSelection": true
+    }
+]
