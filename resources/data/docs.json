@@ -7,7 +7,12 @@
     {
         "id": "nationalCyberStrategy2022",
         "name": "National Cyber Strategy 2022",
-        "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1040805/National_Cyber_Strategy_-_FINAL_VERSION.pdf",
+        "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1040805/National_Cyber_Strategy_-_FINAL_VERSION.pdf"
+    },
+    {
+        "id": "integratedReview2023",
+        "name": "Integrated Review Refresh 2023",
+        "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1142616/11857435_NS_IR_Refresh_2023_Supply_AllPages_Revision_4_WEB_PDF_NoCrops_-_gov.uk.pdf",
         "defaultSelection": true
     }
 ]
